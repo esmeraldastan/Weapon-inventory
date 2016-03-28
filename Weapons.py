@@ -10,5 +10,10 @@ class weapons(item):
         self.weight = weight
 
 class two_hand(weapons):
-        
+         def __init__(self, name = 'bow', description = 'kill' , damage = 50, weight = 100):
+            super(two_hand, self).__init__(name = 'bow', description = 'kill' , damage = 50, weight = 100)
+            
+         def bow(self):
+             print '%s can kill' 
+            
         
