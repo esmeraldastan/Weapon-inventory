@@ -30,10 +30,24 @@ class one_hand(Weapons):
         super(one_hand, self).__init__(name, damage = 10, weight = 15)
         
     
-        
 sword = two_hand(Weapons) 
 axe = two_hand2(Weapons)
 cross_bow = two_hand3(Weapons)
 dagger = one_hand(Weapons) 
 
-#CONSUMABLES        
+#CONSUMABLES   
+
+#SUBCLASS
+class Consumable(Item):
+    
+    def __init__(self, name, health):
+        super(Consumable, self).__init__(name)
+        self.health = health
+        
+class health_potion(Consumable):
+    def __init__(self, name, health = 200):
+        super(health_potion, self).__init__(name, health = 200)
+        
+health = health_potion(Consumable)
+
+     
