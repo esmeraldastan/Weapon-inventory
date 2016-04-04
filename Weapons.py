@@ -1,8 +1,8 @@
-#WEAPONS AT USE 
 class Item(object):
     def __init__(self, name):
-        self.name = name 
-
+        self.name = name
+         
+#WEAPONS AT USE
 #SUPERCLASS                
 class Weapons(Item):
     
@@ -34,6 +34,31 @@ sword = two_hand(Weapons)
 axe = two_hand2(Weapons)
 cross_bow = two_hand3(Weapons)
 dagger = one_hand(Weapons) 
+
+#WEAPON INVENTORY
+class player(object):
+
+    def __init__(self, name, weight, items):
+        self.name = name
+        self.weight = weight
+        self.items = items 
+     
+    def inventory(self):
+        for item in self.items:
+            print item
+         
+    def take(self, new_item):
+        if len(self.items)<self.weight:
+            self.items.append(new_item)
+        else:
+            print "A weight limit has been reached. No more items can be taken. Leave some other weapons behind."
+       
+    def leave(self, old_item):
+        if old_item in self.items:
+            self.items.remove(old_item)
+        else:
+            print "Weapon not found."
+              
 
 #CONSUMABLES   
 
