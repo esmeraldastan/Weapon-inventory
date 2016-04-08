@@ -33,8 +33,9 @@ class one_hand(Weapons):
 sword = two_hand(Weapons) 
 axe = two_hand2(Weapons)
 cross_bow = two_hand3(Weapons)
-dagger = one_hand(Weapons) 
-
+dagger = one_hand(Weapons)
+ 
+choice = None
 #WEAPON INVENTORY
 class player(object):
 
@@ -59,6 +60,7 @@ class player(object):
         else:
             print "Weapon not found."
               
+while choice!= 0
 
 #CONSUMABLES   
 
