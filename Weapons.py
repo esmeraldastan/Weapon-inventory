@@ -35,6 +35,7 @@ axe = two_hand2(Weapons)
 cross_bow = two_hand3(Weapons)
 dagger = one_hand(Weapons)
  
+weight = 2000
 choice = None
 #WEAPON INVENTORY
 class player(object):
@@ -60,7 +61,9 @@ class player(object):
         else:
             print "Weapon not found."
               
-while choice!= 0
+    '''while choice!= "0"
+        if choice == '1' '''
+    
 
 #CONSUMABLES   
 
