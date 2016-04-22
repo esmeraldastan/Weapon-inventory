@@ -71,7 +71,7 @@ sword = two_hand(Weapons)
 axe = two_hand2(Weapons)
 cross_bow = two_hand3(Weapons)
 dagger = one_hand(Weapons)
-<<<<<<< HEAD
+
  
 weight = 2000
 choice = None
@@ -102,9 +102,9 @@ class player(object):
     '''while choice!= "0"
         if choice == '1' '''
     
-=======
+
 club = two_hand4(Weapons)        
->>>>>>> origin/master
+
 
     
 #CONSUMABLES   
